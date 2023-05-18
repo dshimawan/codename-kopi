@@ -16,7 +16,7 @@ export default function SideNavbar() {
   return (
     <div>
         <Disclosure defaultOpen as='nav'>
-            <Disclosure.Button className='absolute top-4 right-4 inline-flex items-center peer justify-center rounded-md p-2 text-gray-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white group hover:bg-gray-900'>
+            <Disclosure.Button className='absolute top-4 right-4 inline-flex items-center peer justify-center rounded-md p-2 text-gray-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white group hover:bg-green-700'>
               <GiHamburgerMenu className='block h-6 w-6' aria-hidden='true'/>
             </Disclosure.Button>
             <Disclosure.Panel className='p-6 w-fit h-screen bg-white z-20 fixed top-0 -left-96 lg:w-60 lg:left-0 peer-focus:left-0 peer-focus:transition ease-out delay-150 duration-200'>
