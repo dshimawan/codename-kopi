@@ -51,7 +51,7 @@ export default function SideNavbar() {
                   </Link>
                 </div>
                 <div className='w-full'>
-                  <Link href='/'>
+                  <Link href='/login'>
                     <div className='flex mb-2 justify-start items-center gap-4 px-5 border border-gray-200 hover:bg-green-700 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto'>
                       <MdOutlineLogout className='text-2xl text-gray-600 group-hover:text-white'/>
                       <h3 className='text-base text-gray-800 group-hover:text-white font-semibold'>

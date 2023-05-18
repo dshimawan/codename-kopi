@@ -1,11 +1,9 @@
 import BarChart from "@/components/BarChart";
 import RecentLog from "@/components/RecentLog";
 import TopCards from "@/components/TopCards";
-import {redirect} from 'next/navigation';
 
 
-export default function Home() {
-  redirect('/login')
+export default function Dashboard() {
   return (
     <main className='min-h-screen'>
         <TopCards />
