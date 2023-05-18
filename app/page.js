@@ -11,6 +11,6 @@ export default function Home() {
           <BarChart />
           <RecentLog />
         </div>
-      </main>
+    </main>
   )
 }
