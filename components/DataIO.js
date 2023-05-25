@@ -1,27 +1,29 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Modal } from 'flowbite'
 
 export default function DataIO() {
-    const $targetEl = document.getElementById('defaultModal')
-    const $triggerEl = document.getElementById('defaultModalButton')
-    const options = {
-        placement: 'bottom-right',
-        backdrop: 'dynamic',
-        backdropClasses: 'bg-gray-900 bg-opacity-50 dark:bg-opacity-80 fixed inset-0 z-40',
-        closable: true,
-        onHide: () => {
-            console.log('modal is hidden')
-        },
-        onShow: () => {
-            console.log('modal is shown')
-        },
-        onToggle: () => {
-            console.log('modal has been toggled')
-        }
-    };
-    const modal = new Modal($targetEl, $triggerEl, options)
+    useEffect(() => {
+        const $targetEl = document.getElementById('defaultModal')
+        const $triggerEl = document.getElementById('defaultModalButton')
+        const options = {
+            placement: 'bottom-right',
+            backdrop: 'dynamic',
+            backdropClasses: 'bg-gray-900 bg-opacity-50 dark:bg-opacity-80 fixed inset-0 z-40',
+            closable: true,
+            onHide: () => {
+                console.log('modal is hidden')
+            },
+            onShow: () => {
+                console.log('modal is shown')
+            },
+            onToggle: () => {
+                console.log('modal has been toggled')
+            }
+        };
+        const modal = new Modal($targetEl, $triggerEl, options)
+    }, [])
   return (
     <div className='pt-20 pb-2 pr-4'>
         <div class="flex justify-center w-auto p-4 m-4">
