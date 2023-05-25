@@ -1,15 +1,18 @@
+import DataIO from '@/components/DataIO'
 import SearchBar from '@/components/SearchBar'
 import { data } from '@/data/data'
 import React from 'react'
 import {CiCoffeeBean} from 'react-icons/ci'
 
 export default function Inventory() {
+
   return (
     <main className='pl-20'>
       <div className='flex justify-end'>
+        <DataIO />
         <SearchBar />
       </div>
-      <div className='p-4'>
+      <div className='p-4 pt-2'>
         <div className='w-full m-auto p-4 border rounded-lg bg-white overflow-y-auto'>
           <div className='my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'>
             <span>Origin</span>
