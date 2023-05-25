@@ -3,14 +3,18 @@ import React from 'react'
 export default function SearchBar() {
   return (
     <div className='pt-20 pb-2 pr-4'>
-        <div className="rounded-lg bg-white p-4 ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:px-4">
-            <div className="mx-auto max-w-md">
-            <form action="" className="relative mx-auto w-max">
-                <input type="search" className="peer relative z-10 h-12 w-12 cursor-pointer rounded-full border bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-green-700 focus:pl-16 focus:pr-4" />
-                <svg xmlns="http://www.w3.org/2000/svg" className="absolute inset-y-0 my-auto h-8 w-12 border-r border-transparent stroke-gray-500 px-3.5 peer-focus:border-green-700 peer-focus:stroke-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-            </form>
+        <div className="rounded-lg bg-white p-4">
+            <div className="w-96">
+              <form>   
+                  <label for="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                  <div className="relative">
+                      <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                          <svg aria-hidden="true" className="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                      </div>
+                      <input type="search" id="default-search" className="block w-full p-4 pl-10 text-sm text-gray-800 border border-gray-300 rounded-lg bg-gray-50 focus:ring-green-500 focus:border-green-500" placeholder="Search Origin, Jenis..." required/>
+                      <button type="submit" className="text-white absolute right-2.5 bottom-2.5 bg-green-700 hover:bg-green-800 font-medium rounded-lg text-sm px-4 py-2">Search</button>
+                  </div>
+              </form>
             </div>
         </div>
     </div>

@@ -7,14 +7,14 @@ import {
 
 export default function Log() {
   return (
-    <main>
+    <main className='pl-20'>
       <div className='pt-20 p-4'>
         <div className='w-full m-auto p-4 border rounded-lg bg-white overflow-y-auto'>
           <div className='my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'>
-            <span>Barang</span>
-            <span className='sm:text-left text-right'>Status</span>
-            <span className='hidden md:grid'>Sisa Stock</span>
-            <span className='hidden sm:grid'>Tanggal Distribusi</span>
+            <span className='font-medium'>Barang</span>
+            <span className='font-medium sm:text-left text-right'>Status</span>
+            <span className='font-medium hidden md:grid'>Sisa Stock</span>
+            <span className='font-medium hidden sm:grid'>Tanggal Distribusi</span>
           </div>
           <ul>
             {data.map((order, id) => (
@@ -30,8 +30,8 @@ export default function Log() {
                   }>
                     {
                       order.log == 'Masuk'
-                        ? <TbPackageImport className='text-gray-600' />
-                        : <TbPackageExport className='text-gray-600' />
+                        ? <TbPackageImport className='text-gray-800' />
+                        : <TbPackageExport className='text-gray-800' />
                     }
                   </div>
                   <div className='pl-4'>
@@ -41,12 +41,12 @@ export default function Log() {
                     <p className='text-gray-800 text-sm'>{order.name.origin + ' ' + order.name.type}</p>
                   </div>
                 </div>
-                <p className='text-gray-600 font-semibold sm:text-left text-right'>
+                <p className='text-gray-800 font-semibold sm:text-left text-right'>
                   <span
                     className={
                       order.log == 'Masuk'
-                        ? 'bg-green-300 p-2 rounded-lg'
-                        : 'bg-red-300 p-2 rounded-lg'
+                        ? 'bg-green-300 p-2 px-3 rounded-lg'
+                        : 'bg-red-300 p-2 px-3 rounded-lg'
                     }
                   >
                     {order.log}

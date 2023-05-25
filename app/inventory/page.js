@@ -5,7 +5,7 @@ import {CiCoffeeBean} from 'react-icons/ci'
 
 export default function Inventory() {
   return (
-    <main>
+    <main className='pl-20'>
       <div className='flex justify-end'>
         <SearchBar />
       </div>

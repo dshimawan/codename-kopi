@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  mode: 'jit',
   content: [
     './node_modules/flowbite-react/**/*.js',
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -8,6 +9,8 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

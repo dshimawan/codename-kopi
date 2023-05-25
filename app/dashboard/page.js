@@ -1,11 +1,10 @@
 import BarChart from "@/components/BarChart";
 import RecentLog from "@/components/RecentLog";
-import TopCards from "@/components/TopCards";
 
 
 export default function Dashboard() {
   return (
-    <main className="pt-20 p-4">
+    <main className="pt-20 p-4 pl-24">
         <div className="flex content-center w-full p-4 pt-6 bg-white rounded-lg">
           <div>
             <h1 className="text-3xl font-bold text-gray-800">Dashboard</h1>
