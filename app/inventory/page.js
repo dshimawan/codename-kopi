@@ -5,8 +5,10 @@ import {CiCoffeeBean} from 'react-icons/ci'
 
 export default function Inventory() {
   return (
-    <main className='min-h-screen'>
-      <SearchBar />
+    <main>
+      <div className='flex justify-end'>
+        <SearchBar />
+      </div>
       <div className='p-4'>
         <div className='w-full m-auto p-4 border rounded-lg bg-white overflow-y-auto'>
           <div className='my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'>

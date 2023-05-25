@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function SearchBar() {
   return (
-    <div className='grid lg:grid-cols-1 pt-20 pb-2'>
-        <div className="rounded-xl bg-white p-4 ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:px-4">
+    <div className='pt-20 pb-2 pr-4'>
+        <div className="rounded-lg bg-white p-4 ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:px-4">
             <div className="mx-auto max-w-md">
             <form action="" className="relative mx-auto w-max">
                 <input type="search" className="peer relative z-10 h-12 w-12 cursor-pointer rounded-full border bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-green-700 focus:pl-16 focus:pr-4" />
