@@ -35,14 +35,14 @@ export default function Login() {
               </div>
               <Link href='/dashboard'>
               <div className="pt-4 mt-2">
-                <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-green-700 rounded-md hover:bg-green-600 focus:outline-none focus:bg-gray-600">
+                <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-green-700 rounded-md hover:bg-green-600 focus:outline-none focus:bg-green-800">
                   Login
                 </button>
               </div>
               </Link>
             </form>
           </div>
-          <div className='w-80 bg-clip-border bg-cover bg-center bg-[url("https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80")]'>
+          <div className='w-80 bg-clip-border bg-cover bg-center bg-login-page'>
             
           </div>
         </div>

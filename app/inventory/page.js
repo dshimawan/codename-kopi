@@ -7,7 +7,7 @@ import {CiCoffeeBean} from 'react-icons/ci'
 export default function Inventory() {
 
   return (
-    <main className='pl-20'>
+    <main className='w-full'>
       <div className='flex justify-end'>
         <DataIO />
         <SearchBar />
@@ -15,10 +15,10 @@ export default function Inventory() {
       <div className='p-4 pt-2'>
         <div className='w-full m-auto p-4 border rounded-lg bg-white overflow-y-auto'>
           <div className='my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'>
-            <span>Origin</span>
-            <span className='sm:text-left text-right'>Jenis</span>
-            <span className='hidden md:grid'>Jumlah</span>
-            <span className='hidden sm:grid'>Kadar Air</span>
+            <span className='font-medium'>Origin</span>
+            <span className='font-medium sm:text-left text-right'>Jenis</span>
+            <span className='font-medium hidden md:grid'>Jumlah</span>
+            <span className='font-medium hidden sm:grid'>Kadar Air</span>
           </div>  
           <ul>
             {data.map((order, id) => (
