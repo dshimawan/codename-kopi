@@ -11,7 +11,7 @@ export default function Log() {
     <main className='pt-20 p-4 w-full'>
       <SortBy />
       <div className='w-full m-auto p-4 border rounded-lg bg-white overflow-y-auto'>
-        <div className='my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'>
+        <div className='my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between'>
           <span className='font-medium'>Barang</span>
           <span className='font-medium sm:text-left text-right'>Status</span>
           <span className='font-medium hidden md:grid'>Sisa Stok</span>
@@ -21,7 +21,7 @@ export default function Log() {
           {data.map((order, id) => (
             <li
               key={id}
-              className='bg-gray-50 hover:bg-gray-100 rounded-lg my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'
+              className='bg-gray-50 hover:bg-gray-100 rounded-lg my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between'
             >
               <div className='flex'>
                 <div className={
@@ -31,8 +31,8 @@ export default function Log() {
                 }>
                   {
                     order.log == 'Masuk'
-                      ? <TbPackageImport className='text-gray-800' />
-                      : <TbPackageExport className='text-gray-800' />
+                      ? <TbPackageImport className='text-xl text-gray-800' />
+                      : <TbPackageExport className='text-xl text-gray-800' />
                   }
                 </div>
                 <div className='pl-4'>
